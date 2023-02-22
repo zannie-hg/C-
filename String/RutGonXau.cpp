@@ -8,16 +8,20 @@ void solve() {
 //   cout<<ans;
   for (int i = 1; i <= len; i++) {
     if (len % i == 0){
-      string c = ans; 
-      int d = 1;
-      while (c.size() < len && d*ans.size() < len) {
-        c += ans;
-        d++;
-      }
-      if (c == s) {
-        cout << d << ans << endl;
-        return;
-      }
+      // string c = ans; 
+      // int d = 1;
+      // while (c.size() < len && d*ans.size() < len) {
+      //   c += ans;
+      //   d++;
+      // }
+      // if (c == s) {
+      //   cout << d << ans << endl;
+      //   return;
+      // }
+
+
+
+      
     } 
     ans += s.substr(i,1);
   }
