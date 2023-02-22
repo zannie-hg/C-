@@ -1,35 +1,33 @@
 #include <bits/stdc++.h>
 using namespace std;
-struct Citizen
+struct Citizin
 {
     string name;
     string gender;
     int yearOfBirth;
     string hometown;
 };
-
+int currentYear = 2021;
 int main()
 {
     int n;
     cin >> n;
-    Citizen citizens[n];
+    Citizin citizin[n];
     for (int i = 0; i < n; i++)
     {
-        getline(cin >> ws, citizens[i].name);
-        getline(cin >> ws, citizens[i].gender);
-        cin >> citizens[i].yearOfBirth;
-        getline(cin >> ws, citizens[i].hometown);
-        
+        getline(cin >> ws, citizin[i].name);
+        getline(cin >> ws, citizin[i].gender);
+        cin >> citizin[i].yearOfBirth;
+
+        getline(cin >> ws, citizin[i].hometown);
     }
-    int currentYear = 2021;
     for (int i = 0; i < n; i++)
     {
-        int age = currentYear - citizens[i].yearOfBirth;
-        cout << citizens[i].name << endl;
-        cout << citizens[i].gender << endl;
-        cout << age << endl;
-        cout << citizens[i].hometown << endl;
-        
+        int age = currentYear - citizin[i].yearOfBirth;
+        cout << citizin[i].name<<endl;
+        cout << citizin[i].gender<<endl;
+        cout << age<<endl;
+        cout<<citizin[i].hometown<<endl;
     }
     return 0;
 }

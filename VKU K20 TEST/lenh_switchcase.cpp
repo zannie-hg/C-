@@ -5,22 +5,7 @@ int main()
 {
     int n;
     cin >> n;
-    // if(n<=10 && n>=1){
-    //      if(n==9||n==10){
-    //     cout<<"Xep loai A";
-    // } else if (n==7||n==8)
-    // {
-    //     cout<<"Xep loai B";
-    // } else if (n==5||n==6)
-    // {
-    //     cout<<"Xep loai C";
-    // } else
-    // {
-    //     cout<<"Xep loai D";
-    // }
-    // } else {
-    //     cout<<"N";
-    // }
+   
     if(n>=1 && n<=10){
 
     }
